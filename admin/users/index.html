@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Reservation System</title>
+    <!-- google font icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- local css file -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- ion icons import -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+   
+    <script src="script.js"></script>
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+      <div class="box-container">
+   
+      </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- header section starts -->
+    <header class="header">
+      <a><i class="menu material-icons"> menu </i></a>
+      <nav class="navbar">
+        <a href="#">home</a>
+        <a href="#about">about</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="reservationForm.html">Reservation</a>
+        
+        <a href="update.html">update Reservation</a>
+        <a href="#contact">contact</a>
+        <a href="../adminLogin.php">admin</a>
+      </nav>
+    </header>
+    <!-- header section ends -->
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="box">
+          <h1 class="heading">
+            Welcome to Ethiopian <span>Alpha </span>Hotel.
+          </h1>
+          <p>
+            A striking contemporary property with elegant design and outstanding
+            facilities in a prime location just 5 minutes´ walk away from the
+            Addis Ababa Bole International Airport, Ethiopian Alpha Hotel
+            promises guests an unforgettable experience during their visit to
+            Addis Ababa. The hotel is a convenient and aspirational
+            accommodation option for business and leisure travellers, and people
+            visiting this vibrant city. Be spoilt for choice with 1024
+            comfortably modern rooms and suites with different room types. Check
+            out the extra modern amenities of our suites. All rooms and suites
+            offer a host of contemporary design features and essential comforts,
+            including full Wi-Fi connectivity, that meet the needs of long- and
+            short-stay guests at Ethiopian Alpha Hotel. If you plan a meeting,
+            event, or special occasion, including weddings, our dedicated
+            facility, including the largest hotel ballroom in Addis Ababa and
+            eight fully equipped meeting rooms with the latest audio-visual
+            equipment and modern décor, promise corporate and social gatherings
+            with style and finesse.
+          </p>
+  
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+      <div class="col-container">
+        <div class="col">
+        
+              <h1>Feedback Form</h1>
+              <form method="post" action="feedback_implementation.php">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required />
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit" />
+              </form>
+            
+        </div>
+
+        <div class="col">
+          <h1 class="heading">contact <span>Help Center</span></h1>
+          <p>email</p>
+          <span
+            ><a href="#" style="text-decoration: none; color: black"
+              >help@alpha.info.com</a
+            ></span
+          >
+          <br />
+          <br />
+          <p>phone</p>
+          <span>+251994103544</span>
+          <br />
+          <br />
+          <p>fax</p>
+          <span>+251994103544</span>
+          <br />
+          <br />
+          <p>address</p>
+          <span>
+            Bole, <br />
+            Addis Ababa
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer" id="footer">
+      <div class="socials">
+        <h2>Social Medias</h2>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </div>
+      <p>
+        &copy; copyright 2023 <br />
+        desinged and developed by Alpha Group
+      </p>
+    </section>
+    <!-- footer section ends -->
+  </body>
+</html>

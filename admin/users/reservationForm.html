@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Reservation System</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+ 
+    form {
+      width: 500px;
+      margin: 0 auto;
+    }
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Reserve Your Room
+  </h1>
+  <form action="create.php" method="post">
+    <label for="guest_name">Guest Name:</label>
+    <input type="text" name="guest_name" required>
+    <label for="check_in_date">Check-in Date:</label>
+    <input type="date" name="check_in_date" required>
+    <label for="check_out_date">Check-out Date:</label>
+    <input type="date" name="check_out_date" required>
+    <label for="room_type">Room Type:</label>
+    <select name="room_type" required>
+      <option value="">-- Select Room Type --</option>
+      <option value="Single">Delux A Standard Room</option>  
+      <option value="Double">Delux B Standard Room</option>
+      <option value="Suite">Delux A Travellers </option>
+    </select>
+    <label for="num_guests">Number of Guests:</label>
+    <input type="number" name="num_guests" required>
+    <input type="submit" value="Submit Reservation">
+  </form>
+</body>
+</html>

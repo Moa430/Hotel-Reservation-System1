@@ -1,0 +1,245 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  /* utility classes */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* header styles */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .navbar a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 100%;
+    line-height: 80px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: #fff;
+    background-color: #333;
+  }
+  
+  .menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  /* home section styles */
+  .home {
+    height: 100vh;
+    background-image: url("images/fikit.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* about section styles */
+  .about {
+    padding: 100px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .about h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+  }
+  
+  .about .box-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .about .box {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .about .box-container .box .image {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .about .box-container .box .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  /* contact section styles */
+  .contact {
+    padding: 100px 0;
+    background-color: #fff;
+  }
+  
+  .contact h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .contact .col-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact .col {
+    flex: 1;
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+  
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact input[type="tel"],
+  .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+  }
+  
+  .contact textarea {
+    height: 150px;
+  }
+  
+  .contact .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact .btn:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact span {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* footer section styles */
+  .footer {
+    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .footer .socials {
+    margin-bottom: 20px;
+  }
+  
+  .footer .socials ion-icon {
+    font-size: 30px;
+    margin-right: 20px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer .socials ion-icon:hover {
+    color: #f5f5f5;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* media queries */
+  @media (max-width: 991px) {
+    .container {
+      padding: 0 10px;
+    }
+  
+    .menu {
+      display: block;
+    }
+  
+    .navbar {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-color: #333;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      transform: translateY(-100%);
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .navbar.show {
+      transform: translateY(0);
+    }
+  
+    .navbar a {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      border-bottom: 1px solid #fff;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .navbar a:hover {
+      background-color: #fff;
+      color: #333;
+    }
+  }
+

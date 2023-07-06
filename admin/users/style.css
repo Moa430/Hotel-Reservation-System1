@@ -1,0 +1,34 @@
+/* style the reservation form */
+form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"] {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
